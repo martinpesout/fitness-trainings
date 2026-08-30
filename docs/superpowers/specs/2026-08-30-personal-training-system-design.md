@@ -321,13 +321,13 @@ Povinné minimum tvoří skutečné pracovní série, celkové RPE a případná
 ```yaml
 active_block: 2026-09-block-001
 plan_status: approved
-last_completed: B
+sequence_position: B
 next_session: C
 ```
 
 `next_session` se po dokončené jednotce posune na další šablonu. Zrušený termín ho neposune.
 
-Dokončená jednotka posune sekvenci automaticky. U částečně dokončené nebo předčasně ukončené jednotky systém nic nepředpokládá. Při zápisu se výslovně rozhodne, zda příště jednotku zopakovat, upravit nebo pokračovat následující šablonou.
+`sequence_position` označuje poslední šablonu, za kterou se průběžná sekvence skutečně posunula. Dokončená jednotka nastaví pozici na svou šablonu automaticky. U částečně dokončené nebo předčasně ukončené jednotky systém nic nepředpokládá. Rozhodnutí `repeat` ponechá předchozí pozici, zatímco `advance` ji nastaví na právě zaznamenanou šablonu. Tím stav nelže o dokončení a současně jednoznačně určuje následující jednotku.
 
 ## 14. Hodnocení bloku
 
