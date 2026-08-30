@@ -5,7 +5,7 @@ Stav: schválený návrh k závěrečné kontrole
 
 ## 1. Účel systému
 
-Systém funguje jako průběžný osobní trenér pro domácí posilovnu. Připravuje čtyřtýdenní tréninkové bloky, nechává uživatele návrh připomínkovat a po schválení vyhodnocuje skutečně odcvičené jednotky. Hlavním cílem je dlouhodobě udržitelný rozvoj síly a obecné kondice.
+Systém funguje jako průběžný osobní trenér pro domácí posilovnu. Připravuje časově omezené tréninkové bloky, nechává uživatele návrh připomínkovat a po schválení vyhodnocuje skutečně odcvičené jednotky. Hlavním cílem je dlouhodobě udržitelný rozvoj síly a obecné kondice.
 
 Výchozí týden počítá se třemi silovými jednotkami a možností doplnit běh, outdoor cyklistiku nebo indoor cycling. Kardio není automaticky povinné. V konkrétním bloku může být volitelné nebo může tvořit integrovanou část tréninku.
 
@@ -156,7 +156,9 @@ Protože nejsou dostupné skutečně odcvičené jednotky a váhy, staré plány
 
 ### 6.1 Časový horizont
 
-Blok má výchozí hodnoticí horizont čtyři týdny. Čtyři týdny nejsou povinnost dokončit přesně dvanáct silových jednotek. Po skončení období AI vyhodnotí skutečný počet jednotek a doporučí pokračování, částečné prodloužení nebo nový blok.
+Blok má výchozí hodnoticí horizont čtyři týdny, ale délka není pevná. Generátor může navrhnout blok dlouhý 3–6 týdnů, pokud vysvětlí důvod. Čtyři týdny jsou vhodný výchozí bod pro první bloky a situace, ve kterých chceme rychle získat zpětnou vazbu. Pět nebo šest týdnů může dávat smysl při stabilním progresu a předvídatelném kalendáři. Kratší blok může sloužit k návratu po pauze, překlenutí dovolené nebo vyzkoušení nového zaměření.
+
+Délka bloku není totéž jako životnost cviku. Hlavní varianta může pokračovat přes několik navazujících bloků. Žádná délka bloku nevytváří povinnost dokončit přesný počet silových jednotek. Po skončení období AI vyhodnotí skutečný počet jednotek a doporučí pokračování, prodloužení nebo nový blok.
 
 ### 6.2 Struktura jednotek
 
@@ -198,6 +200,8 @@ AI může příležitostně navrhnout kondiční část jako součást tréninku
 
 Systém z integrovaného kardia nedělá tvrdý požadavek ani složitý samostatný režim. Jde o trenérskou možnost pro bloky, ve kterých dává smysl.
 
+Integrované kardio se počítá jako zatížení příslušných svalových skupin v dané i sousedních jednotkách. Intenzivní třicetiminutový indoor cycling se proto běžně nekombinuje s vysokým objemem těžkých dřepů, kyčelních tahů nebo dalších náročných cviků pro nohy ve stejné jednotce. Pokud AI takovou kombinaci navrhne, musí výslovně zdůvodnit její účel, pořadí částí, upravený silový objem a následnou regeneraci. Při společné jednotce a prioritě síly se silová část provádí před kondiční.
+
 ### 7.3 Spontánní aktivita
 
 Spontánní běh nebo jízda nemusí být součástí schváleného plánu. Uživatel ji může stručně zaznamenat, aby následné vyhodnocení znalo skutečnou zátěž.
@@ -210,7 +214,7 @@ Soubor obsahuje metadata a čitelný plán:
 ---
 block: 1
 status: draft
-review_after_weeks: 4
+planned_duration_weeks: 4
 session_sequence: [A, B, C]
 target_strength_sessions: 12
 ---
@@ -226,7 +230,7 @@ target_strength_sessions: 12
 # Schválené změny během bloku
 ```
 
-`target_strength_sessions` je plánovací odhad pro běžný čtyřtýdenní průběh. Není to dluh ani podmínka úspěšného dokončení bloku.
+`planned_duration_weeks` určuje schválený hodnoticí horizont konkrétního bloku. `target_strength_sessions` je plánovací odhad, nikoli dluh nebo podmínka úspěšného dokončení.
 
 Každý cvik uvádí série, rozsah opakování, cílové RPE, pauzu, stručnou instrukci a technický odkaz. Plán běžně neurčuje konkrétní pracovní váhu. Uživatel ji volí podle cílového RPE a skutečnost zapíše do záznamu.
 
@@ -349,6 +353,7 @@ Před schválením bloku systém ověří:
 - sekvence jednotek je platná,
 - hlavní pohybové vzory jsou rozumně pokryté,
 - odhad délky odpovídá obsahu,
+- integrované kardio je započítané do zatížení nohou a okolních jednotek,
 - každý hlavní cvik má pravidlo progrese,
 - plán zohledňuje poslední výsledky a známá omezení,
 - volitelné a povinné části jsou odlišitelné,
@@ -367,11 +372,13 @@ Implementace musí ověřit alespoň tyto scénáře:
 3. Částečně dokončená jednotka neposune sekvenci bez výslovného rozhodnutí.
 4. Volitelné kardio se nepočítá jako nesplněná povinnost.
 5. Integrovaná kondiční část upozorní na delší trvání a možný dopad na silový objem.
-6. Generátor odmítne cvik s nedostupným vybavením nebo nabídne proveditelnou alternativu.
-7. Nový cvik může vstoupit do návrhu, i když není v knihovně.
-8. Starý předepsaný plán se neinterpretuje jako skutečně odcvičený výkon.
-9. `draft` se nestane aktivním blokem bez výslovného schválení.
-10. Po delší pauze systém nabídne posouzení návratové jednotky místo mechanického pokračování v původním objemu.
+6. Intenzivní cycling společně s vysokým objemem náročné silové práce pro nohy vyžaduje výslovné zdůvodnění a úpravu zatížení.
+7. Generátor může navrhnout 3–6týdenní blok, ale musí uvést důvod odchylky od výchozích čtyř týdnů.
+8. Generátor odmítne cvik s nedostupným vybavením nebo nabídne proveditelnou alternativu.
+9. Nový cvik může vstoupit do návrhu, i když není v knihovně.
+10. Starý předepsaný plán se neinterpretuje jako skutečně odcvičený výkon.
+11. `draft` se nestane aktivním blokem bez výslovného schválení.
+12. Po delší pauze systém nabídne posouzení návratové jednotky místo mechanického pokračování v původním objemu.
 
 ## 17. Rozhodnutí ponechaná na jednotlivých blocích
 
@@ -396,3 +403,6 @@ Zdroje:
 - [Meta-analýza full-body a split rutin](https://pubmed.ncbi.nlm.nih.gov/38595233/)
 - [Systematický přehled frekvence silového tréninku](https://pmc.ncbi.nlm.nih.gov/articles/PMC8363540/)
 - [Síťová meta-analýza předpisu silového tréninku](https://pmc.ncbi.nlm.nih.gov/articles/PMC10579494/)
+- [Meta-analýza souběžného silového a vytrvalostního tréninku](https://pmc.ncbi.nlm.nih.gov/articles/PMC8053170/)
+- [Meta-analýza pořadí síly a vytrvalosti v jedné jednotce](https://pmc.ncbi.nlm.nih.gov/articles/PMC5752732/)
+- [Meta-analýza periodizovaných a neperiodizovaných programů](https://pubmed.ncbi.nlm.nih.gov/35044672/)
