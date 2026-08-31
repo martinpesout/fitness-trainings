@@ -18,3 +18,21 @@ Zdroj: `history/blocks/2026-06-19--2026-08.md`
 Uživatel potvrdil absolvování bloku. Trénink mu seděl, pomáhal udržet sílu
 a ponechával dost energie na běh nebo cyklistiku. Podobně vyvážená skladba
 A/B/C je vhodný kandidát pro budoucí bloky, ne povinná šablona.
+
+## 13. 4. 2026 až červen 2026: síla s indoor cyklistikou
+
+Zdroj: `history/blocks/2026-04-13--2026-06.md`
+
+- Všechny jednotky: 10 minut na indoor trenažéru jako warm-up a volitelných
+  20 minut na konci.
+- A, horní polovina těla: bench press 4 × 8–10; Pendlay row, Z-press a
+  standing barbell French press 3 × 8–10; chin-up 3 × maximum.
+- B, dolní polovina těla: Zercher squat 4 × 8–10; Romanian deadlift
+  3 × 10; standing barbell calf raise 3 × 8–10.
+- C, smíšený trénink: deadlift, Bulgarian split squat, strict dips a split
+  press, vše 3 × 8–10.
+
+Blok byl dobře poskládaný, ale A byl dlouhý a vyčerpávající. Uživatel proto
+někdy vynechal závěrečné kolo. Bulgarian split squat ho kvůli náročnosti a
+dlouhodobému opakování přestal bavit, není však zakázaný. Při dalším použití
+je vhodné zvážit obměnu nebo jasně zdůvodnit jeho návrat.
