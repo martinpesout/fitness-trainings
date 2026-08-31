@@ -1,9 +1,9 @@
-active_block: null
-plan_status: null
+active_block: 2026-09-block-001
+plan_status: active
 default_sequence:
   - A
   - B
   - C
 sequence_position: null
 next_session: A
-block_number: 0
+block_number: 1

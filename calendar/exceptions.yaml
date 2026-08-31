@@ -1,1 +1,7 @@
-exceptions: []
+exceptions:
+  - date: 2026-10-06
+    type: unavailable
+    reason: Nahlášený výpadek
+  - date: 2026-10-07
+    type: unavailable
+    reason: Nahlášený výpadek
