@@ -102,11 +102,9 @@ class SystemAcceptanceTest < Minitest::Test
     write_yaml(root, "data/equipment.yaml", equipment)
 
     write_yaml(root, "data/exercise_library.yaml", {
-      "version" => 1,
       "exercises" => [{ "name" => "Goblet squat" }]
     })
     write_yaml(root, "_system/state/current.yaml", {
-      "version" => 1,
       "active_block" => nil,
       "plan_status" => nil,
       "default_sequence" => %w[A B C],
@@ -210,7 +208,6 @@ class SystemAcceptanceTest < Minitest::Test
   def activate_plan(root, position:, next_session:)
     set_plan_status(root, "active")
     write_yaml(root, "_system/state/current.yaml", {
-      "version" => 1,
       "active_block" => BLOCK,
       "plan_status" => "active",
       "default_sequence" => %w[A B C],
@@ -230,7 +227,6 @@ class SystemAcceptanceTest < Minitest::Test
 
   def close_block(root, position:, next_session:)
     write_yaml(root, "_system/state/current.yaml", {
-      "version" => 1,
       "active_block" => nil,
       "plan_status" => nil,
       "default_sequence" => %w[A B C],
@@ -306,7 +302,6 @@ class SystemAcceptanceTest < Minitest::Test
 
   def record_cancelled_date(root)
     write_yaml(root, "calendar/exceptions.yaml", {
-      "version" => 1,
       "exceptions" => [{
         "date" => "2026-09-04",
         "type" => "cancelled",

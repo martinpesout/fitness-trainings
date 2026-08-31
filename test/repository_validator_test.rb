@@ -32,18 +32,16 @@ class RepositoryValidatorTest < Minitest::Test
 
   def write_canonical_root(root)
     write(root, "data/profile.yaml", <<~YAML)
-      version: 1
       goals: { primary: [] }
       training: { weekly_strength_frequency: 3 }
       health: { review_status: needs_review, limitations: [] }
     YAML
-    write(root, "data/equipment.yaml", "version: 1\nreview_status: needs_input\nitems: []\nnotes: null\n")
+    write(root, "data/equipment.yaml", "review_status: needs_input\nitems: []\nnotes: null\n")
     %w[preferences.md exercise_library.yaml coaching_rules.md history_summary.md].each do |path|
-      write(root, "data/#{path}", path.end_with?(".yaml") ? "version: 1\nexercises: []\n" : "# #{path}\n")
+      write(root, "data/#{path}", path.end_with?(".yaml") ? "exercises: []\n" : "# #{path}\n")
     end
-    write(root, "calendar/exceptions.yaml", "version: 1\nexceptions: []\n")
+    write(root, "calendar/exceptions.yaml", "exceptions: []\n")
     write(root, "_system/state/current.yaml", <<~YAML)
-      version: 1
       active_block: null
       plan_status: null
       default_sequence: [A, B, C]
@@ -155,7 +153,6 @@ class RepositoryValidatorTest < Minitest::Test
 
   def write_active_state(root, plan_status: "active", position: nil, next_session: "A", block_number: 1)
     write(root, "_system/state/current.yaml", <<~YAML)
-      version: 1
       active_block: 2026-09-block-001
       plan_status: #{plan_status}
       default_sequence: [A, B, C]
