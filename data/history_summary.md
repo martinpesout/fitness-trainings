@@ -55,3 +55,22 @@ podobných cvicích. Po pokusu snížit zátěž se změnila skladba programu. J
 historickou reakci, ne aktuální omezení. Uživatel současně vnímal 30 minut
 cyklotrenažéru zařazených do každé jednotky jako přínos pro hubnutí a
 zpevnění středu těla. Toto je subjektivní pozorování.
+
+## 18. 1. 2026 až březen 2026: síla pro horní a dolní polovinu těla
+
+Zdroj: `history/blocks/2026-01-18--2026-03.md`
+
+- A, horní polovina těla: strict press, seated wide-grip row, dumbbell
+  lateral raise, single-arm pushdown a dumbbell preacher curl 3 × 8–10;
+  pull-up 3 × maximum. U preacher curlu sloužila jako opora polohovatelná
+  lavice.
+- B, dolní polovina těla a střed: Bulgarian split squat 3 × 10 na každou
+  stranu; deficit Romanian deadlift a standing barbell calf raise 3 × 10;
+  leg curl 3 × 8–10; barbell roll-out 3 × 20.
+- C, horní polovina těla: strict dip, floor press, barbell row a standing
+  barbell curl 3 × 8–10; chin-up a diamond push-up 3 × maximum.
+
+Celkový dojem si uživatel přesně nepamatuje; jen nejistě odhaduje, že blok
+fungoval dobře. V tréninku B se poprvé objevila bolest pravého kolene, která
+pak přetrvávala přibližně dva měsíce a vymizela. Jde o historickou reakci,
+ne aktuální omezení.
