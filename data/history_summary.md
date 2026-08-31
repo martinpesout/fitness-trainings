@@ -74,3 +74,18 @@ Celkový dojem si uživatel přesně nepamatuje; jen nejistě odhaduje, že blok
 fungoval dobře. V tréninku B se poprvé objevila bolest pravého kolene, která
 pak přetrvávala přibližně dva měsíce a vymizela. Jde o historickou reakci,
 ne aktuální omezení.
+
+## 26. 11. 2025 až leden 2026: střídání A/B pro dolní a horní polovinu těla
+
+Zdroj: `history/blocks/2025-11-26--2026-01.md`
+
+- Průběžná sekvence používala pouze A/B. Odpočinek byl 2 minuty mezi
+  sériemi i cviky.
+- A, dolní polovina těla a střed: back squat, cyclist front squat a
+  barbell reverse lunge 3 × 8–10; deficit Romanian deadlift 3 × 10;
+  barbell roll-out 3 × 10; standing barbell calf raise 3 × 8–10.
+- B, horní polovina těla: lat pulldown, Pendlay row, dumbbell lateral
+  raise, seated dumbbell shoulder press a dumbbell preacher curl
+  3 × 8–10; strict dips 3 × maximum.
+
+Zpětné hodnocení ani informace o skutečných zátěžích a RPE nejsou k dispozici.
