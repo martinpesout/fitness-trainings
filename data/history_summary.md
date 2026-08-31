@@ -121,3 +121,20 @@ Zdroj: `history/blocks/2025-08-29--2025-10.md`
   vše 2 × 8–10.
 
 Zpětné hodnocení ani informace o skutečných zátěžích a RPE nejsou k dispozici.
+
+## 5. 8. 2025 až 28. 8. 2025: dlouhé smíšené šablony A/B
+
+Zdroj: `history/blocks/2025-08-05--2025-08-28.md`
+
+- A: landmine hack squat, Romanian deadlift, single-arm dumbbell row,
+  alternating dumbbell curl a skull crusher 2 × 8–10; standing barbell
+  calf raise 2 × maximum; lat pulldown 3 × maximální izometrická výdrž
+  ve spodní pozici; incline bench press 3 × 8–10.
+- B: paused bench press, seated row s úzkým úchopem, dumbbell lateral
+  raise, leg extension a leg curl 2 × 8–10; kneeling cable crunch a
+  standing barbell calf raise 3 × 8–10.
+
+Blok uživateli nepřipadal dobře poskládaný. Osm cviků v A a sedm cviků
+v B vedlo k příliš dlouhým jednotkám. Opakované střídání pouze A/B
+navíc postupně vedlo k nudě. Jde o hodnocení tohoto bloku, ne obecný
+zákaz dvoušablonového programu.
