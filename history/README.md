@@ -22,6 +22,11 @@ trénink skutečně absolvován, s jakou zátěží ani s jakým výsledkem.
 
 Chybějící informace se nedoplňují odhadem.
 
+Pokud konkrétní historický cvik naznačuje použití vybavení, které není
+v `data/equipment.yaml`, AI uvede cvik i předpokládané vybavení a požádá
+uživatele o potvrzení nebo doplnění inventáře. Bez potvrzení uživatele se
+vybavení do inventáře nepřidá ani se jeho dostupnost nepovažuje za jistou.
+
 ## Co sem nepatří
 
 - zpětně vytvářené záznamy jednotlivých tréninků,

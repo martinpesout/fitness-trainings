@@ -1,11 +1,128 @@
 version: 1
-review_status: needs_input
+review_status: confirmed
 items:
   - name: Silniční kolo
     notes: Pro venkovní cyklistiku a použití s indoor trenažérem.
   - name: Trekové kolo
     notes: Pro venkovní cyklistiku.
-  - name: Indoor cyklistický trenažér
+  - name: Domácí trenažér Van Rysel D500 se Zwift Cog and Click
+    manufacturer: Van Rysel
     available_since: "2026-02"
+    product_url: https://www.decathlon.cz/p/domaci-trenazer-van-rysel-d500-s-zwift-cog-and-click/_/R-p-301243
+    type: Smart trenažér s přímým pohonem
+    training_capabilities:
+      - Měření výkonu a trénink podle wattů
+      - Automatické řízení odporu kompatibilními aplikacemi
+      - Simulace stoupání do 15 %
     notes: Používám ho hlavně v kombinaci se silničním kolem.
-notes: Seznam vybavení domácí posilovny zatím není kompletní.
+  - name: Olympijská osa Strong 2.0
+    manufacturer: TRUESTEEL
+    quantity: 1
+    weight_kg: 20
+    length_cm: 220
+    sleeve_diameter_mm: 50
+    product_url: https://www.truesteel.cz/p/olympijska-osa-strong-2-0
+    notes: Univerzální olympijská osa se středovým vroubkováním.
+  - name: Kotouče pro olympijskou osu
+    compatible_sleeve_diameter_mm: 50
+    plates:
+      - weight_kg: 1.25
+        quantity: 2
+      - weight_kg: 2.5
+        quantity: 2
+      - weight_kg: 5
+        quantity: 2
+      - weight_kg: 10
+        quantity: 2
+      - weight_kg: 15
+        quantity: 2
+      - weight_kg: 20
+        quantity: 2
+      - weight_kg: 25
+        quantity: 2
+  - name: Nástěnný sklopný half rack ATX LINE FBR-750 s hrazdou
+    manufacturer: ATX
+    product_code: ATX-FBR-750
+    quantity: 1
+    height_cm: 219
+    wall_mounted: true
+    foldable: true
+    integrated_pull_up_bar: true
+    product_url: https://www.360globalfitness.cz/p/half-rack-na-zed-sklopny-atx-line-vyska-219-cm
+    attachments:
+      - name: Háky na odkládání osy (J-hooks)
+        quantity: 2
+      - name: Bezpečnostní ramena (safety arms)
+        quantity: 2
+      - name: Odnímatelná bradla na dipy
+        quantity: 1
+    notes: Háky, bezpečnostní ramena i bradla lze zavěsit na konstrukci.
+  - name: Set nakládacích jednoručních činek TRINFIT 30 mm, 2 × 30 kg
+    manufacturer: TRINFIT
+    product_code: TRN-518-30b2x
+    quantity: 1
+    original_set_weight_per_dumbbell_kg: 30
+    components:
+      handles:
+        - name: Hřídel na činku 16" / 400 / 30 mm se závitem
+          product_code: TRN-541-40
+          quantity: 2
+          length_mm: 400
+          sleeve_diameter_mm: 30
+      plates:
+        - weight_kg: 10
+          quantity: 4
+          name: Závaží na činky TRINFIT litina 10 kg / 30 mm
+        - weight_kg: 5
+          quantity: 8
+          product_code: TRN-501-05c
+        - weight_kg: 2.5
+          quantity: 4
+          product_code: TRN-501-02c
+        - weight_kg: 1.25
+          quantity: 4
+          product_code: TRN-501-01c
+  - name: EZ osa TRINFIT 30 mm se závitem
+    manufacturer: TRINFIT
+    quantity: 1
+    sleeve_diameter_mm: 30
+    notes: Používá stejné 30mm kotouče jako nakládací jednoruční činky.
+  - name: Polohovatelná lavice TRINFIT Bench L5 Pro
+    manufacturer: TRINFIT
+    product_code: TRN-118-L5Pro
+    quantity: 1
+    attachments:
+      - name: Kopač TRINFIT pro L5 Pro
+        exercises:
+          - Předkopávání
+          - Zakopávání
+      - name: Kladka TRINFIT pro L5 Pro
+        pulley_positions:
+          - Horní kladka
+          - Dolní kladka
+        included_handles:
+          - Rovné madlo pro úzké přítahy
+          - Široké madlo pro široké přítahy
+          - name: Obouruční madlo s gumou HMS UW04
+            manufacturer: HMS
+            product_url: https://www.fitham.cz/obourucni-madlo-s-gumou-hms-uw04
+            notes: Pogumované obouruční madlo pro úzké přítahy, zejména na spodní kladce.
+  - name: Posilovací elastické gumové expandéry
+    notes: Počet a úrovně odporu zatím nejsou doplněné.
+  - name: Švihadlo
+  - name: Zátěžový pás na závaží (dip belt)
+  - name: Gymnastické kruhy s upevňovacími popruhy
+  - name: Kettlebell 8 kg
+    quantity: 1
+    weight_kg: 8
+  - name: Kettlebell 12 kg
+    quantity: 1
+    weight_kg: 12
+  - name: Nízká madla na kliky GymBeam Push up Bar
+    manufacturer: GymBeam
+    quantity: 1
+    pieces_per_set: 2
+    product_code: SPTgym1854
+    product_url: https://www.alza.cz/sport/gymbeam-adapter-na-kliky-push-up-bar-d13116047.htm
+    notes: Ergonomická madla umožňují hlubší rozsah pohybu při klicích.
+notes: Inventář vybavení byl uživatelem potvrzen 2026-08-31 a lze jej později doplňovat.

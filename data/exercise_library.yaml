@@ -1,2 +1,14 @@
 version: 1
-exercises: []
+exercises:
+  - name: Single-leg landmine Romanian deadlift
+    description: Jednonožní rumunský mrtvý tah s jedním koncem olympijské osy stabilně opřeným v rohu místnosti.
+    status: Uživatelem vyzkoušený cvik
+    equipment:
+      - Olympijská osa Strong 2.0
+      - Kotouče pro olympijskou osu
+      - Stabilní a neklouzavé opření nepoužívaného konce osy
+    setup: Zatížený konec osy držím jednou rukou, druhý konec je opřený v rohu místnosti.
+    safety_notes:
+      - Před každou sérií ověřit, že opřený konec nemůže vyklouznout ani se zvednout.
+      - Nepoužívat roh nebo povrch, který neposkytuje stabilní opření.
+    reference_url: https://www.youtube.com/results?search_query=single+leg+landmine+romanian+deadlift
