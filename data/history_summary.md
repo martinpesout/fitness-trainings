@@ -36,3 +36,22 @@ Blok byl dobře poskládaný, ale A byl dlouhý a vyčerpávající. Uživatel p
 někdy vynechal závěrečné kolo. Bulgarian split squat ho kvůli náročnosti a
 dlouhodobému opakování přestal bavit, není však zakázaný. Při dalším použití
 je vhodné zvážit obměnu nebo jasně zdůvodnit jeho návrat.
+
+## 11. 3. 2026 až duben 2026: první blok s indoor cyklotrenažérem
+
+Zdroj: `history/blocks/2026-03-11--2026-04.md`
+
+- Všechny jednotky: 10 minut na cyklotrenažéru jako warm-up a 20 minut na
+  konci.
+- A: Larson press, deficit Romanian deadlift, Bulgarian split squat a
+  barbell row, vše 3 × 8–10.
+- B: pull-up a strict dips se zátěží 3 × 4–6; split squat a single-arm
+  dumbbell row 3 × 8–10.
+- C: deadlift, Bulgarian split squat, paused incline bench press a Z-press,
+  vše 3 × 8–10.
+
+Blok skončil brzy kvůli bolesti pravého kolene při Bulgarian split squatu a
+podobných cvicích. Po pokusu snížit zátěž se změnila skladba programu. Jde o
+historickou reakci, ne aktuální omezení. Uživatel současně vnímal 30 minut
+cyklotrenažéru zařazených do každé jednotky jako přínos pro hubnutí a
+zpevnění středu těla. Toto je subjektivní pozorování.
