@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+require "training_system/repository_validator"
+
+root = ARGV.fetch(0, Dir.pwd)
+diagnostics = TrainingSystem::RepositoryValidator.new(root).call
+diagnostics.each do |item|
+  puts "#{item.severity.upcase} #{item.code} #{item.path}: #{item.message}"
+end
+
+exit(diagnostics.any? { |item| item.severity == "error" } ? 1 : 0)

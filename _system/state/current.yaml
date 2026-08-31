@@ -1,0 +1,10 @@
+version: 1
+active_block: null
+plan_status: null
+default_sequence:
+  - A
+  - B
+  - C
+sequence_position: null
+next_session: A
+block_number: 0

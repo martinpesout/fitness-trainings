@@ -1,0 +1,14 @@
+version: 1
+goals:
+  primary: []
+training:
+  weekly_strength_frequency: 3
+  preferred_modalities:
+    - strength
+    - calisthenics
+    - running
+    - cycling
+  session_duration_minutes: 60
+health:
+  review_status: needs_review
+  limitations: []
