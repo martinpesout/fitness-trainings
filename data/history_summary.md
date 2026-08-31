@@ -138,3 +138,22 @@ Blok uživateli nepřipadal dobře poskládaný. Osm cviků v A a sedm cviků
 v B vedlo k příliš dlouhým jednotkám. Opakované střídání pouze A/B
 navíc postupně vedlo k nudě. Jde o hodnocení tohoto bloku, ne obecný
 zákaz dvoušablonového programu.
+
+## 30. 6. 2025 až 4. 8. 2025: síla a vysoké objemové výzvy A/B/C
+
+Zdroj: `history/blocks/2025-06-30--2025-08-04.md`
+
+- A: back squat 3 × 5; box squat na lavici 4 × 10; landmine Romanian
+  deadlift 4 × 15; walking lunge se zátěží 200 opakování v co nejmenším
+  počtu sérií.
+- B: barbell bench press 3 × 5; strict press a single-arm dumbbell press
+  4 × 8; bent-over barbell row ve třech blocích 3 × 12, 3 × 8 a
+  3 × 5 s postupným zvýšením zátěže.
+- C: deadlift 3 × 5; dumbbell seal row 4 × 12; lateral landmine row
+  4 × 10 na každou stranu s jednosekundovou výdrží nahoře; barbell good
+  morning 100 opakování v co nejmenším počtu sérií.
+
+U Dumbbell seal row byla lavice vyvýšena na několika velkých olympijských
+kotoučích. Jde o historickou improvizaci z již evidovaného vybavení, ne o
+další položku vybavení. Zpětné hodnocení ani skutečné zátěže a RPE
+nejsou k dispozici.
