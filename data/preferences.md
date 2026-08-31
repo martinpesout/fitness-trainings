@@ -22,3 +22,4 @@
 ## Co chci zkusit
 
 - Příležitostně nové cviky nebo varianty, pokud zapadají do cíle bloku a jejich zařazení je srozumitelně zdůvodněné.
+- Vyhovuje mi široký výběr cviků a jejich účelných variant. Pestrost nemá být samoúčelná, ale rád se občas naučím nový cvik nebo způsob provedení.
