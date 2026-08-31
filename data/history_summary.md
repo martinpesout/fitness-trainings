@@ -89,3 +89,19 @@ Zdroj: `history/blocks/2025-11-26--2026-01.md`
   3 × 8–10; strict dips 3 × maximum.
 
 Zpětné hodnocení ani informace o skutečných zátěžích a RPE nejsou k dispozici.
+
+## 19. 10. 2025 až listopad 2025: dvě objemné šablony A/B
+
+Zdroj: `history/blocks/2025-10-19--2025-11.md`
+
+- A, horní polovina těla: paused incline bench press, dumbbell fly,
+  single-arm dumbbell row, preacher curl a cable triceps pushdown
+  2 × 8–10; barbell row a dumbbell lateral raise 3 × 8–10.
+- B, dolní polovina těla a střed: back squat, Bulgarian split squat a leg
+  curl 2 × 8–10; good morning 2 × 10; dip bar leg raise 3 × maximum;
+  standing barbell calf raise 3 × 8–10. Good morning nahradil původně
+  navržený Back extension, pro který nebylo dostupné vybavení.
+
+Blok nebyl hodnocen špatně, ale mnoho cviků vyžadovalo časté přestavování
+domácí posilovny. Uživatel si nebyl jistý, zda dvě pracovní série stačí pro
+progres. Jde o pocit, ne pravidlo pro minimální počet sérií.
