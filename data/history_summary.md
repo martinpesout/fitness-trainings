@@ -157,3 +157,21 @@ U Dumbbell seal row byla lavice vyvýšena na několika velkých olympijských
 kotoučích. Jde o historickou improvizaci z již evidovaného vybavení, ne o
 další položku vybavení. Zpětné hodnocení ani skutečné zátěže a RPE
 nejsou k dispozici.
+
+## 1. 6. 2025 až 29. 6. 2025: tři celotělové šablony A/B/C
+
+Zdroj: `history/blocks/2025-06-01--2025-06-29.md`
+
+- A: dumbbell split squat 4 × 15 na každou stranu; dumbbell bench press,
+  close-grip lat pulldown, seated dumbbell curl a supine barbell triceps
+  extension 4 × 12; Romanian deadlift 4 × 10.
+- B: pull-up a diamond push-up 4 × maximum; good morning a barbell hack
+  squat 4 × 12; barbell bench press a standing barbell curl 4 × 10.
+  Good morning nahrazoval nedostupný Back extension.
+- C: deadlift a front squat 4 × 8; landmine row 4 × 12 na každou stranu;
+  incline dumbbell bench press, standing EZ-bar curl a standing barbell
+  calf raise 4 × 10. Calf raise obsahoval jednosekundovou výdrž v dolní
+  pozici.
+
+Zpětné hodnocení, skutečné zátěže, RPE ani délky odpočinku nejsou
+k dispozici.
