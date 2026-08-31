@@ -105,3 +105,19 @@ Zdroj: `history/blocks/2025-10-19--2025-11.md`
 Blok nebyl hodnocen špatně, ale mnoho cviků vyžadovalo časté přestavování
 domácí posilovny. Uživatel si nebyl jistý, zda dvě pracovní série stačí pro
 progres. Jde o pocit, ne pravidlo pro minimální počet sérií.
+
+## 29. 8. 2025 až říjen 2025: smíšené šablony A/B
+
+Zdroj: `history/blocks/2025-08-29--2025-10.md`
+
+- Odpočinek mezi cviky byl v obou trénincích 2 minuty. Délka odpočinku
+  mezi pracovními sériemi není známá.
+- A: strict dips, paused incline bench press, wide-grip seated press, leg
+  curl, standing barbell curl a cable triceps pushdown ve 2 sériích;
+  chin-up 2 × maximum a Bulgarian split squat 3 × 8–10.
+- B: Romanian deadlift, leg extension, kneeling cable crunch, rear delt fly
+  s odporovou gumou, dumbbell lateral raise, alternating dumbbell curl,
+  single-arm overhead triceps extension a standing barbell calf raise,
+  vše 2 × 8–10.
+
+Zpětné hodnocení ani informace o skutečných zátěžích a RPE nejsou k dispozici.
