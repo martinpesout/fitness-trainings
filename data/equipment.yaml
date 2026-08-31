@@ -1,4 +1,11 @@
 version: 1
 review_status: needs_input
-items: []
-notes: null
+items:
+  - name: Silniční kolo
+    notes: Pro venkovní cyklistiku a použití s indoor trenažérem.
+  - name: Trekové kolo
+    notes: Pro venkovní cyklistiku.
+  - name: Indoor cyklistický trenažér
+    available_since: "2026-02"
+    notes: Používám ho hlavně v kombinaci se silničním kolem.
+notes: Seznam vybavení domácí posilovny zatím není kompletní.

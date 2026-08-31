@@ -1,14 +1,31 @@
 version: 1
 goals:
-  primary: []
+  primary:
+    - Rozvoj síly
+    - Udržení nebo zlepšení kondice
+  secondary:
+    - Zlepšení tělesné kompozice
 training:
   weekly_strength_frequency: 3
+  training_environment: Domácí posilovna
+  experience: Pravidelně cvičím v domácí posilovně.
+  usual_schedule:
+    days:
+      - pondělí
+      - středa
+      - pátek
+    time_of_day: Ráno
+  schedule_flexibility: Dny lze podle potřeby přizpůsobit.
+  weekends_often_available: true
   preferred_modalities:
-    - strength
-    - calisthenics
-    - running
-    - cycling
+    - Silový trénink
+    - Silový trénink s prvky CrossFitu
+    - Příležitostná kalistenika
+    - Běh
+    - Venkovní cyklistika
+    - Indoor cyklistika
   session_duration_minutes: 60
 health:
-  review_status: needs_review
+  review_status: confirmed
   limitations: []
+  notes: Aktuálně nemám žádná zdravotní omezení.
