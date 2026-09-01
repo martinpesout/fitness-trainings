@@ -11,7 +11,9 @@ sequence:
   - A
   - B
   - C
-approved_changes: []
+approved_changes:
+  - "2026-09-01: Povolen průběžný session log se stavem in_progress bez posunu sekvence."
+  - "2026-09-01: K Romanian deadlift doplněn uživatelem poskytnutý odkaz na techniku."
 ---
 
 # Tréninkový blok 001: síla, kruhy a prostor pro kondici
@@ -57,7 +59,8 @@ pozici průběžné sekvence uchovává `_system/state/current.yaml`.
   Indoor trenažér není povinný warm-up; 5–8 velmi lehkých minut lze
   použít pouze podle teploty a chuti.
 - Dokončená jednotka posune sekvenci. Zrušený termín ji neposune.
-  `partial` nebo `aborted` vyžaduje rozhodnutí `repeat` nebo `advance`.
+  `in_progress` je pouze průběžný zápis a sekvenci neposune. `partial` nebo
+  `aborted` vyžaduje rozhodnutí `repeat` nebo `advance`.
 - Zapiš skutečné série, opakování, zátěž, RPE, délku, stav a poznámky.
 - Před cviky na kruzích zkontroluj popruhy, upevnění a stejnou výšku
   obou kruhů. U Back squatu nastav bezpečnostní ramena.
@@ -72,7 +75,7 @@ pozici průběžné sekvence uchovává `_system/state/current.yaml`.
 | Exercise | Prescribed sets | Prescribed reps | Target RPE | Notes |
 | --- | --- | --- | --- | --- |
 | Back squat | 3 | 4–6 | 7–8 | Pauza 2,5–3 minuty; použij safety arms |
-| Romanian deadlift | 3 | 6–8 | 8 | Pauza 2–3 minuty; ukonči při ztrátě stabilní pozice trupu |
+| Romanian deadlift | 3 | 6–8 | 8 | Pauza 2–3 minuty; ukonči při ztrátě stabilní pozice trupu; [technika](https://www.youtube.com/shorts/oQwnGfZFfzw) |
 | Barbell reverse lunge | 2 | 8 na každou stranu | 8 | Pauza 90–120 sekund; kontrolovaný krok vzad |
 | Long-lever plank | 3 | 20–40 sekund | 8 | Pauza 60–90 sekund; [technika](https://www.youtube.com/results?search_query=long+lever+plank+proper+form) |
 
@@ -142,4 +145,8 @@ spontánně vynechat.
 
 ## Approved Changes
 
-Žádné. Draft byl 1. 9. 2026 schválen beze změn.
+- Draft byl 1. 9. 2026 schválen beze změn.
+- Dne 1. 9. 2026 byl schválen průběžný zápis přímo do session logu
+  se stavem `in_progress`. Nemění obsah tréninku ani pozici sekvence.
+- Dne 1. 9. 2026 byl k Romanian deadlift doplněn uživatelem poskytnutý
+  odkaz na techniku. Ukázka používá jednoručky, princip pohybu je stejný.
