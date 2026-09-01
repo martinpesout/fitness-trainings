@@ -214,3 +214,19 @@ oporu chodidel. U step-upu sloužily jako stupínek vyrovnané velké
 olympijské kotouče. Jde o historické improvizace, jejichž stabilitu je
 potřeba před případným budoucím použitím znovu posoudit. Zpětné hodnocení,
 skutečné zátěže, RPE ani délky odpočinku nejsou k dispozici.
+
+## 24. 2. 2025 až 25. 3. 2025: tři celotělové silové šablony A/B/C
+
+Zdroj: `history/blocks/2025-02-24--2025-03-25.md`
+
+- A: deadlift 5 × 5; close-grip bench press 4 × 10; pull-up 4 × maximum;
+  Bulgarian split squat s jednoručkami 4 × 12 na každou stranu.
+- B: barbell muscle clean 5 × 8; dumbbell push press 4 × 10; Russian
+  kettlebell swing a barbell front-rack box squat 4 × 20.
+- C: back squat a strict press 4 × 10; push-up 4 × maximum; alternating
+  seated dumbbell press 4 × 16 střídavých opakování celkem, tedy 8 na
+  každou ruku.
+
+Muscle clean a front-rack box squat se prováděly s olympijskou osou. U
+box squatu sloužila jako box polohovatelná lavice. Zpětné hodnocení,
+skutečné zátěže, RPE ani délky odpočinku nejsou k dispozici.
