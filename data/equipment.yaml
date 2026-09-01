@@ -22,6 +22,9 @@ items:
     sleeve_diameter_mm: 50
     product_url: https://www.truesteel.cz/p/olympijska-osa-strong-2-0
     notes: Univerzální olympijská osa se středovým vroubkováním.
+  - name: Polstr na olympijskou osu
+    quantity: 1
+    notes: Měkký návlek na osu, používaný mimo jiné proti otlaku nohou při improvizovaném Nordic hamstring curlu.
   - name: Kotouče pro olympijskou osu
     compatible_sleeve_diameter_mm: 50
     plates:

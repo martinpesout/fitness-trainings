@@ -194,3 +194,23 @@ Zdroj: `history/blocks/2025-04-28--2025-05-31.md`
 Russian back extension hold se prováděl napříč přes polohovatelnou lavici,
 která podpírala střed těla. Nešlo o použití samostatné konstrukce na back
 extension. Zpětné hodnocení, skutečné zátěže ani RPE nejsou k dispozici.
+
+## 26. 3. 2025 až 27. 4. 2025: tři smíšené silové šablony A/B/C
+
+Zdroj: `history/blocks/2025-03-26--2025-04-27.md`
+
+- A: back squat 4 × 6–8; Nordic hamstring curl 4 × 10; strict dips
+  4 × maximum; dumbbell seal row 4 × 12.
+- B: paused incline bench press 4 × 8 s jednosekundovou pauzou na
+  hrudníku; dumbbell gorilla row 4 × 14 střídavých opakování celkem;
+  dumbbell Romanian deadlift 4 × 12 s třísekundovou excentrickou fází;
+  behind-the-neck step-up 4 × 10 na každou stranu.
+- C: deadlift 4 × 8 s jednosekundovou pauzou u kolen během pohybu vzhůru;
+  Zercher good morning, dumbbell bench press a standing barbell curl
+  4 × 10.
+
+Nordic hamstring curl používal naloženou olympijskou osu s polstrem jako
+oporu chodidel. U step-upu sloužily jako stupínek vyrovnané velké
+olympijské kotouče. Jde o historické improvizace, jejichž stabilitu je
+potřeba před případným budoucím použitím znovu posoudit. Zpětné hodnocení,
+skutečné zátěže, RPE ani délky odpočinku nejsou k dispozici.
