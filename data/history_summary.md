@@ -175,3 +175,22 @@ Zdroj: `history/blocks/2025-06-01--2025-06-29.md`
 
 Zpětné hodnocení, skutečné zátěže, RPE ani délky odpočinku nejsou
 k dispozici.
+
+## 28. 4. 2025 až 31. 5. 2025: síla, dynamika a přenášení zátěže A/B/C
+
+Zdroj: `history/blocks/2025-04-28--2025-05-31.md`
+
+- A: deadlift 4 × 6–8 s jednosekundovou pauzou během tahu vzhůru;
+  Zercher good morning, dumbbell bench press a standing barbell curl
+  4 × 10.
+- B: back squat 4 × 5 v supersérii s paused air squat jump 4 × 10;
+  strict press 5 × 5 v supersérii s plyometric bench push-up 5 × 10;
+  kettlebell waiter walk 4 × 20 metrů na každou stranu. U obou supersérií
+  následovaly 2 minuty odpočinku po dokončení dvojice.
+- C: barbell bench press 5 × 5 v supersérii s dynamickým dumbbell push
+  press 5 × 10; goblet squat 5 × 15 v supersérii s Russian back extension
+  hold 5 × 45–60 sekund; farmer's walk s jednoručkami 4 × 30–40 metrů.
+
+Russian back extension hold se prováděl napříč přes polohovatelnou lavici,
+která podpírala střed těla. Nešlo o použití samostatné konstrukce na back
+extension. Zpětné hodnocení, skutečné zátěže ani RPE nejsou k dispozici.
