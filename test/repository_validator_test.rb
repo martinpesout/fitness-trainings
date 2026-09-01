@@ -93,7 +93,9 @@ class RepositoryValidatorTest < Minitest::Test
     }.merge(metadata)
     front_matter = fields.map { |key, value| "#{key}: #{yaml_value(value)}" }.join("\n")
     decision = fields["sequence_decision"] || "not applicable"
-    position_after = if %w[partial aborted].include?(fields["status"]) && fields["sequence_decision"] == "repeat"
+    position_after = if fields["status"] == "in_progress"
+      fields["sequence_position_before"]
+    elsif %w[partial aborted].include?(fields["status"]) && fields["sequence_decision"] == "repeat"
       fields["sequence_position_before"]
     else
       fields["template"]
@@ -488,6 +490,74 @@ class RepositoryValidatorTest < Minitest::Test
       write_session_log(root, metadata: { "status" => "scheduled" })
 
       assert_includes codes(root), "invalid_session_status"
+    end
+  end
+
+  def test_in_progress_session_is_valid_without_advancing_active_sequence
+    with_repository do |root|
+      write_active_plan(root, metadata: { "status" => "active" })
+      write_session_log(root, metadata: {
+        "status" => "in_progress", "next_session" => "A",
+        "credited_strength_session" => false
+      })
+      write_active_state(root, position: nil, next_session: "A")
+
+      errors = diagnostics(root).select { |item| item.severity == "error" }
+      assert_empty errors
+    end
+  end
+
+  def test_in_progress_session_cannot_be_credited_as_completed
+    with_repository do |root|
+      write_active_plan(root)
+      write_session_log(root, metadata: {
+        "status" => "in_progress", "next_session" => "A",
+        "credited_strength_session" => true
+      })
+
+      assert_includes codes(root), "invalid_in_progress_credit"
+    end
+  end
+
+  def test_in_progress_session_cannot_decide_the_sequence
+    with_repository do |root|
+      write_active_plan(root)
+      write_session_log(root, metadata: {
+        "status" => "in_progress", "sequence_decision" => "advance",
+        "next_session" => "A", "credited_strength_session" => false
+      })
+
+      assert_includes codes(root), "invalid_sequence_decision"
+    end
+  end
+
+  def test_in_progress_session_keeps_the_current_template_as_next
+    with_repository do |root|
+      write_active_plan(root)
+      write_session_log(root, metadata: {
+        "status" => "in_progress", "next_session" => "B",
+        "credited_strength_session" => false
+      })
+
+      assert_includes codes(root), "mismatched_next_session"
+    end
+  end
+
+  def test_no_session_can_follow_an_in_progress_session
+    with_repository do |root|
+      write_active_plan(root)
+      write_session_log(root, metadata: {
+        "status" => "in_progress", "next_session" => "A",
+        "credited_strength_session" => false
+      })
+      write_session_log(root, filename: "02-A.md", metadata: {
+        "date" => "2026-09-03", "session_number" => 2,
+        "sequence_position_before" => nil, "next_session" => "B"
+      })
+
+      diagnostic = diagnostics(root).find { |item| item.code == "session_after_in_progress" }
+      refute_nil diagnostic
+      assert_equal "blocks/2026-09-block-001/sessions/02-A.md", diagnostic.path
     end
   end
 

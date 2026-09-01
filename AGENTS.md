@@ -31,9 +31,10 @@ zátěž podle cílového RPE.
    ověřený souhrn v `data/history_summary.md`.
 
 Za skutečný session log považuj pouze vyplněný soubor
-`blocks/<blok>/sessions/NN-ŠABLONA.md`. Plán, šablona ani export od trenéra
-nedokládají absolvovaný výkon. Starou historii nikdy zpětně nepřepisuj po
-jednotlivých trénincích. Zpracuj ji pouze jako souhrn bloků v
+`blocks/<blok>/sessions/NN-ŠABLONA.md`. Stav `in_progress` označuje průběžně
+vyplňovaný záznam, nikoli absolvovaný výkon. Plán, šablona ani export od
+trenéra nedokládají absolvovaný výkon. Starou historii nikdy zpětně
+nepřepisuj po jednotlivých trénincích. Zpracuj ji pouze jako souhrn bloků v
 `data/history_summary.md`: období, zaměření, cviky a předepsané série a
 opakování. Původní soubory ulož do Gitem sledovaného
 `history/blocks/`. Podmínky jejich zpracování jsou v `history/README.md`.
@@ -51,8 +52,8 @@ opakování. Původní soubory ulož do Gitem sledovaného
 - Uveď neprázdnou sekvenci unikátních názvů šablon a samostatnou sekci
   `Template <název>` pro každou položku sekvence.
 - Respektuj `_system/state/current.yaml.next_session`. Zrušený termín sekvenci
-  neposouvá. `completed` ji posune. `partial` a `aborted` vyžadují
-  `sequence_decision: repeat|advance`.
+  neposouvá. `in_progress` ji neposouvá ani se nezapočítává. `completed` ji
+  posune. `partial` a `aborted` vyžadují `sequence_decision: repeat|advance`.
 - Nikdy nepředepisuj konkrétní váhu. Předepiš série, rozsah opakování a
   cílové RPE. Skutečnou zátěž zapíše uživatel do session logu.
 - Knihovna cviků je paměť, ne whitelist. U neznámého cviku použij
@@ -71,10 +72,12 @@ lze označit jako `active` a propsat `active_block`, `plan_status` a
 `block_number` do `_system/state/current.yaml`. Aktivní blok vyžaduje `status: active`
 v plánu, `plan_status: active` ve stavu a shodné číslo bloku.
 
-Každý absolvovaný, částečný nebo přerušený trénink zapisuj podle
-`_system/templates/session-log.md`. Aktualizuj `sequence_position` a `next_session`
-podle výsledku. Zrušený termín nevytváří session outcome a stav sekvence
-nemění.
+Trénink můžeš zapisovat průběžně přímo do kanonického souboru podle
+`_system/templates/session-log.md` se stavem `in_progress`. Takový soubor musí
+být posledním session logem, má `credited_strength_session: false`, nemá
+`sequence_decision` a nemění `sequence_position` ani `next_session`. Po skončení
+jej změň na `completed`, `partial` nebo `aborted` a aktualizuj stav sekvence
+podle výsledku. Zrušený termín nevytváří session outcome a stav sekvence nemění.
 
 Na konci vyplň `review.md` podle `_system/templates/block-review.md`. Teprve potom
 nastav plán na `completed` a použij review při přípravě dalšího draftu. Po

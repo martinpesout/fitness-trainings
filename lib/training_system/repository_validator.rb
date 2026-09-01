@@ -31,7 +31,8 @@ module TrainingSystem
       "Adherence", "RPE and Progress", "Novelty", "Fatigue and Pain", "Cardio",
       "Next-Block Recommendation"
     ].freeze
-    SESSION_STATUSES = %w[completed partial aborted].freeze
+    FINAL_SESSION_STATUSES = %w[completed partial aborted].freeze
+    SESSION_STATUSES = ["in_progress", *FINAL_SESSION_STATUSES].freeze
     EQUIPMENT_REVIEW_STATUSES = %w[needs_input confirmed].freeze
     HEALTH_REVIEW_STATUSES = %w[needs_review confirmed].freeze
     PLANNED_WORK_HEADERS = ["Exercise", "Prescribed sets", "Prescribed reps", "Target RPE", "Notes"].freeze
@@ -458,14 +459,17 @@ module TrainingSystem
     def validate_session_status(path, metadata)
       status = metadata["status"]
       unless SESSION_STATUSES.include?(status)
-        error("invalid_session_status", "#{path}.status", "Session status must be completed, partial, or aborted")
+        error("invalid_session_status", "#{path}.status", "Session status must be in_progress, completed, partial, or aborted")
         return
       end
       decision = metadata["sequence_decision"]
       if %w[partial aborted].include?(status) && !Sequence::DECISIONS.include?(decision)
         error("missing_sequence_decision", "#{path}.sequence_decision", "Partial and aborted sessions require repeat or advance")
-      elsif status == "completed" && !decision.nil?
-        error("invalid_sequence_decision", "#{path}.sequence_decision", "Completed sessions must not specify a sequence decision")
+      elsif %w[in_progress completed].include?(status) && !decision.nil?
+        error("invalid_sequence_decision", "#{path}.sequence_decision", "In-progress and completed sessions must not specify a sequence decision")
+      end
+      if status == "in_progress" && metadata["credited_strength_session"] != false
+        error("invalid_in_progress_credit", "#{path}.credited_strength_session", "An in-progress session cannot receive strength-session credit")
       end
     end
 
@@ -509,6 +513,12 @@ module TrainingSystem
     end
 
     def replay_sessions(entries, sequence)
+      in_progress_index = entries.index { |entry| entry[:metadata]["status"] == "in_progress" }
+      if in_progress_index && in_progress_index < entries.length - 1
+        following_entry = entries.fetch(in_progress_index + 1)
+        error("session_after_in_progress", following_entry[:path], "No session can follow an in-progress session")
+      end
+
       position = nil
       entries.each do |entry|
         path = entry[:path]
@@ -521,7 +531,15 @@ module TrainingSystem
         template = metadata["template"]
         status = metadata["status"]
         decision = metadata["sequence_decision"]
-        valid_outcome = SESSION_STATUSES.include?(status) &&
+        if status == "in_progress"
+          expected_next = Sequence.next(sequence: sequence, position: position)
+          unless metadata["next_session"] == expected_next
+            error("mismatched_next_session", "#{path}.next_session", "Expected #{expected_next.inspect} while the session remains in progress")
+          end
+          next
+        end
+
+        valid_outcome = FINAL_SESSION_STATUSES.include?(status) &&
           (status == "completed" || Sequence::DECISIONS.include?(decision))
         valid_template = sequence.include?(template)
         if valid_outcome && valid_template

@@ -35,7 +35,7 @@ This plan remains a draft until explicitly approved. Activation changes both thi
 - Choose loading by target RPE; the plan does not prescribe weights.
 - Record actual sets, reps, load, RPE, duration, status, and notes in each session log.
 - A cancelled date has no outcome and does not advance the rolling sequence.
-- `completed` advances the sequence. `partial` or `aborted` require `sequence_decision: repeat|advance`.
+- `in_progress` does not advance the sequence or receive session credit. `completed` advances the sequence. `partial` or `aborted` require `sequence_decision: repeat|advance`.
 
 ## Session Templates
 

@@ -88,6 +88,8 @@ další draft.
 skutečně posunula.
 
 - `completed` posune sekvenci na další šablonu.
+- `in_progress` označuje průběžný zápis a sekvenci neposouvá. Musí zůstat
+  posledním session logem a nezapočítává se jako dokončená jednotka.
 - `partial` a `aborted` vyžadují `sequence_decision: repeat|advance`.
 - Zrušený termín nemá session outcome a sekvenci neposouvá.
 
@@ -112,6 +114,7 @@ vyžaduje výslovné zdůvodnění; běžně se objem nohou sníží.
 4. Napiš připomínky. Schválené změny se zapíší do plánu.
 5. Plán výslovně schval. Potom může přejít do stavu `approved` a
    `active`.
-6. Po každé jednotce vyplň skutečný session log.
+6. Během jednotky můžeš zapisovat přímo do session logu se stavem
+   `in_progress`. Po skončení nastav konečný stav.
 7. Na konci bloku zkontroluj `review.md` a teprve potom blok uzavři.
 8. Po změnách znovu spusť `bin/validate`.

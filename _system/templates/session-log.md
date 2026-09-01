@@ -21,7 +21,7 @@ credited_strength_session: false
 - Sequence position after this outcome:
 - Next session template:
 
-The plan status must be `active`. Session status is `completed`, `partial`, or `aborted`. Use `repeat` or `advance` for the sequence decision after a partial or aborted session; write `not applicable` after a completed session.
+The plan status must be `active`. While logging the session, use `in_progress`, keep `sequence_decision` null, keep the current template in `next_session`, and set `credited_strength_session: false`. An in-progress log must be the latest numbered session file. After training, change the status to `completed`, `partial`, or `aborted`. Use `repeat` or `advance` for the sequence decision after a partial or aborted session; write `not applicable` after a completed session.
 
 ## Prescribed Work
 
