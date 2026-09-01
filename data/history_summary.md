@@ -230,3 +230,21 @@ Zdroj: `history/blocks/2025-02-24--2025-03-25.md`
 Muscle clean a front-rack box squat se prováděly s olympijskou osou. U
 box squatu sloužila jako box polohovatelná lavice. Zpětné hodnocení,
 skutečné zátěže, RPE ani délky odpočinku nejsou k dispozici.
+
+## 24. 1. 2025 až 23. 2. 2025: dvě objemné šablony A/B s jednoručkami
+
+Zdroj: `history/blocks/2025-01-24--2025-02-23.md`
+
+- A: dumbbell bench press, dumbbell gorilla row, supinated dumbbell
+  rear-delt fly, incline dumbbell row a dumbbell Romanian deadlift
+  3 × 8–12; Russian back extension hold 2 × 45 sekund; natural leg
+  extension 2 × 8–12.
+- B: incline dumbbell bench press, single-arm dumbbell row, dumbbell
+  lateral raise, incline dumbbell row a standing barbell calf raise
+  3 × 8–12; barbell cyclist front squat a standing dumbbell curl to press
+  2 × 8–12.
+
+U dumbbell gorilla row byl rozsah 8–12 opakování určený pro každou ruku.
+Supinated rear-delt fly se prováděl s jednoručkami. Cyclist front squat a
+standing calf raise používaly olympijskou osu. Zpětné hodnocení, skutečné
+zátěže, RPE ani délky odpočinku nejsou k dispozici.
