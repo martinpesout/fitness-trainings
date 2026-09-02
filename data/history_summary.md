@@ -295,3 +295,26 @@ Zdroj: `history/blocks/2024-09-13--2024-10-24.md`
 U obou supersérií byla pauza 1,5 minuty mezi koly. Sissy squat se
 prováděl bez zátěže. Zpětné hodnocení, ostatní skutečné zátěže, RPE ani
 celková délka tréninků nejsou k dispozici.
+
+## 5. 8. 2024 až 12. 9. 2024: tři šablony A/B/C s nohama a kruhy
+
+Zdroj: `history/blocks/2024-08-05--2024-09-12.md`
+
+- A: box jump 5 × 8; back squat v pěti sériích po 10, 8, 6, 4 a 2
+  opakováních s postupným zvyšováním zátěže; barbell hip thrust on bench
+  4 × 8–10; Bulgarian split squat bez zátěže 4 × 10 na každou nohu;
+  reverse lunge bez zátěže 100 opakování celkem.
+- B, supersérie: negative ring muscle-up 4 × 1–3 s negativní fází
+  dlouhou 4–8 sekund a elevated pike push-up 4 × maximum. Poté muscle-up
+  drill 4 × 5, ring knee raise 4 × maximum a ring row 50 opakování v co
+  nejmenším počtu sérií.
+- C, první supersérie: chin-up a strict dips 3 × maximum.
+- C, druhá supersérie: ring support 3 × maximální výdrž a ring push-up
+  3 × maximum. Poté box pistol squat 4 × 8 na každou nohu a Bulgarian
+  split squat bez zátěže 4 × 12 na každou nohu.
+
+U všech supersérií byla pauza 1,5 minuty mezi koly. Box jump a box
+pistol squat se prováděly na velkém schodu na parkourovém hřišti.
+Reverse lunge i oba výskyty Bulgarian split squatu se prováděly s
+vlastní vahou. Zpětné hodnocení, ostatní skutečné zátěže, RPE ani
+celková délka tréninků nejsou k dispozici.
