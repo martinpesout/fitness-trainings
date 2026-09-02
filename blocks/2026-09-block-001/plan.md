@@ -136,11 +136,7 @@ spontánně vynechat.
 
 ## Integrated Conditioning
 
-- Session template: none
-- Minutes and intensity: none
-- Total-duration impact: none
-- Strength-volume impact: none
-- Lower-body impact: none
+- Status: none
 - Rationale: none; teplota zatím nepřeje delší indoor cyklistice a první blok má vytvořit čistý silový baseline
 
 ## Approved Changes

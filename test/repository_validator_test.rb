@@ -70,11 +70,7 @@ class RepositoryValidatorTest < Minitest::Test
         MARKDOWN
       elsif heading == "Integrated Conditioning"
         <<~MARKDOWN.chomp
-          - Session template: none
-          - Minutes and intensity: none
-          - Total-duration impact: none
-          - Strength-volume impact: none
-          - Lower-body impact: none
+          - Status: none
           - Rationale: none planned
         MARKDOWN
       else
@@ -832,17 +828,81 @@ class RepositoryValidatorTest < Minitest::Test
     end
   end
 
-  def test_plan_integrated_conditioning_requires_each_explicit_field
+  def test_plan_without_integrated_conditioning_accepts_compact_contract
     with_repository do |root|
       write_active_plan(root)
-      rewrite(root, "blocks/2026-09-block-001/plan.md") do |document|
-        document.sub("- Rationale: none planned", "- Rationale:")
-      end
 
-      diagnostic = diagnostics(root).find { |item| item.code == "missing_integrated_conditioning_field" }
-      refute_nil diagnostic
-      assert_equal "blocks/2026-09-block-001/plan.md", diagnostic.path
-      assert_includes diagnostic.message, "Rationale"
+      refute_includes codes(root), "missing_integrated_conditioning_field"
+    end
+  end
+
+  def test_plan_without_integrated_conditioning_requires_status_and_rationale
+    {
+      "Status" => ["- Status: none", "- Status:"],
+      "Rationale" => ["- Rationale: none planned", "- Rationale:"]
+    }.each do |field, (present, blank)|
+      with_repository do |root|
+        write_active_plan(root)
+        rewrite(root, "blocks/2026-09-block-001/plan.md") do |document|
+          document.sub(present, blank)
+        end
+
+        diagnostic = diagnostics(root).find do |item|
+          item.code == "missing_integrated_conditioning_field" && item.message.include?(field)
+        end
+        refute_nil diagnostic
+        assert_equal "blocks/2026-09-block-001/plan.md", diagnostic.path
+      end
+    end
+  end
+
+  def test_plan_with_integrated_conditioning_accepts_planned_contract
+    with_repository do |root|
+      write_active_plan(root)
+      write_planned_integrated_conditioning(root)
+
+      refute_includes codes(root), "invalid_integrated_conditioning_status"
+      refute_includes codes(root), "missing_integrated_conditioning_field"
+    end
+  end
+
+  def test_plan_with_integrated_conditioning_requires_each_detail_field
+    {
+      "Session template" => "C",
+      "Minutes and intensity" => "12 minutes at RPE 6",
+      "Total-duration impact" => "adds 12 minutes",
+      "Strength-volume impact" => "removes one working set",
+      "Lower-body impact" => "reduces lower-body volume"
+    }.each do |field, value|
+      with_repository do |root|
+        write_active_plan(root)
+        write_planned_integrated_conditioning(root)
+        rewrite(root, "blocks/2026-09-block-001/plan.md") do |document|
+          document.sub("- #{field}: #{value}", "- #{field}:")
+        end
+
+        diagnostic = diagnostics(root).find do |item|
+          item.code == "missing_integrated_conditioning_field" && item.message.include?(field)
+        end
+        refute_nil diagnostic
+      end
+    end
+  end
+
+  def write_planned_integrated_conditioning(root)
+    rewrite(root, "blocks/2026-09-block-001/plan.md") do |document|
+      document.sub(<<~NONE.chomp, <<~PLANNED.chomp)
+        - Status: none
+        - Rationale: none planned
+      NONE
+        - Status: planned
+        - Session template: C
+        - Minutes and intensity: 12 minutes at RPE 6
+        - Total-duration impact: adds 12 minutes
+        - Strength-volume impact: removes one working set
+        - Lower-body impact: reduces lower-body volume
+        - Rationale: cycling replaces lower-body volume
+      PLANNED
     end
   end
 

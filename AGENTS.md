@@ -59,9 +59,10 @@ opakování. Původní soubory ulož do Gitem sledovaného
 - Knihovna cviků je paměť, ne whitelist. U neznámého cviku použij
   YouTube search URL. Nevymýšlej `youtube.com/watch?v=` odkaz.
 - `optional_cardio` nabízej odděleně a nezapočítávej ho do adherence
-  silového bloku. `integrated_conditioning` je součást jednotky a musí uvést
-  minuty, intenzitu, prodloužení jednotky, dopad na silový a lower-body objem
-  a zdůvodnění.
+  silového bloku. `integrated_conditioning` je součást jednotky. Bez něj
+  uveď `Status: none` a zdůvodnění. Při `Status: planned` uveď také šablonu,
+  minuty, intenzitu, prodloužení jednotky a dopad na silový i lower-body
+  objem.
 - Zapracuj relevantní položky z `calendar/exceptions.yaml`.
 
 ## Schválení, provoz a uzavření

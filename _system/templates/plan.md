@@ -80,16 +80,22 @@ Optional cardio is offered separately at the end of the plan. Optional cardio do
 
 ## Integrated Conditioning
 
-Integrated conditioning is part of a session. For every included conditioning segment, name its minutes and intensity, total-duration impact, strength-volume impact, lower-body impact, and rationale. Heavy legs plus intense cycling needs an explicit rationale; normally lower-body volume is reduced.
+Integrated conditioning is part of a session. Set `Status` to `none` or `planned`.
+When status is `none`, fill only the rationale. When status is `planned`, also
+name its session template, minutes and intensity, total-duration impact,
+strength-volume impact, and lower-body impact. Heavy legs plus intense cycling
+needs an explicit rationale; normally lower-body volume is reduced.
 
-If this block has no integrated conditioning, fill every field below with `none`.
+- Status:
+- Rationale:
+
+For `Status: planned`, add:
 
 - Session template:
 - Minutes and intensity:
 - Total-duration impact:
 - Strength-volume impact:
 - Lower-body impact:
-- Rationale:
 
 ## Approved Changes
 

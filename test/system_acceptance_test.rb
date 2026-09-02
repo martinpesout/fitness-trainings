@@ -190,6 +190,7 @@ class SystemAcceptanceTest < Minitest::Test
 
       ## Integrated Conditioning
 
+      - Status: planned
       - Session template: C
       - Modality: stationary cycling
       - Minutes and intensity: 12 minutes at RPE 6
@@ -615,6 +616,7 @@ class SystemAcceptanceTest < Minitest::Test
     assert_equal "12 kg", reverse_lunge.fetch("Load"), "actual logged loads remain allowed"
 
     plan_fields = section_fields(plan, "Integrated Conditioning")
+    assert_equal "planned", plan_fields.fetch("Status")
     assert_equal "C", plan_fields.fetch("Session template")
     assert_equal "stationary cycling", plan_fields.fetch("Modality")
     assert_equal "12 minutes at RPE 6", plan_fields.fetch("Minutes and intensity")

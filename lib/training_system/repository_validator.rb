@@ -35,15 +35,17 @@ module TrainingSystem
     SESSION_STATUSES = ["in_progress", *FINAL_SESSION_STATUSES].freeze
     EQUIPMENT_REVIEW_STATUSES = %w[needs_input confirmed].freeze
     HEALTH_REVIEW_STATUSES = %w[needs_review confirmed].freeze
+    PLAN_INTEGRATED_STATUSES = %w[none planned].freeze
     PLANNED_WORK_HEADERS = ["Exercise", "Prescribed sets", "Prescribed reps", "Target RPE", "Notes"].freeze
     ACTUAL_WORK_HEADERS = ["Exercise", "Actual sets", "Actual reps", "Load", "Actual RPE", "Notes"].freeze
     SESSION_HEADINGS = [
       "Lifecycle and Sequence", "Prescribed Work", "Actual Work", "Optional Cardio",
       "Integrated Conditioning", "Duration and Notes"
     ].freeze
-    PLAN_INTEGRATED_FIELDS = [
+    PLAN_INTEGRATED_BASE_FIELDS = ["Status", "Rationale"].freeze
+    PLAN_INTEGRATED_DETAIL_FIELDS = [
       "Session template", "Minutes and intensity", "Total-duration impact",
-      "Strength-volume impact", "Lower-body impact", "Rationale"
+      "Strength-volume impact", "Lower-body impact"
     ].freeze
     SESSION_REQUIRED_FIELDS = {
       "Lifecycle and Sequence" => [
@@ -400,10 +402,25 @@ module TrainingSystem
     def validate_plan_integrated_conditioning(path, document)
       body = section_body(document, "Integrated Conditioning")
       fields = markdown_fields(body)
-      PLAN_INTEGRATED_FIELDS.each do |field|
+      PLAN_INTEGRATED_BASE_FIELDS.each do |field|
         next if fields.key?(field) && !fields[field].empty?
 
         error("missing_integrated_conditioning_field", path, "Integrated Conditioning requires nonblank #{field.inspect}")
+      end
+
+      status = fields["Status"]
+      return if status.nil? || status.empty?
+
+      unless PLAN_INTEGRATED_STATUSES.include?(status)
+        error("invalid_integrated_conditioning_status", path, "Integrated Conditioning status must be none or planned")
+        return
+      end
+      return if status == "none"
+
+      PLAN_INTEGRATED_DETAIL_FIELDS.each do |field|
+        next if fields.key?(field) && !fields[field].empty?
+
+        error("missing_integrated_conditioning_field", path, "Planned Integrated Conditioning requires nonblank #{field.inspect}")
       end
     end
 

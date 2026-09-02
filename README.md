@@ -101,10 +101,12 @@ další B. Částečná B pokračuje podle zapsaného rozhodnutí.
 `optional_cardio` je volitelná nabídka na konci plánu. Uživatel ji může
 vynechat a nezapočítává se do adherence silového bloku.
 
-`integrated_conditioning` patří do konkrétní jednotky. Plán i log uvádějí
-minuty, intenzitu, prodloužení jednotky, dopad na silový objem, dopad na
-lower-body objem a zdůvodnění. Kombinace těžkých nohou a intenzivního kola
-vyžaduje výslovné zdůvodnění; běžně se objem nohou sníží.
+`integrated_conditioning` patří do konkrétní jednotky. Pokud v bloku není,
+plán uvádí pouze `Status: none` a zdůvodnění. Při `Status: planned` doplní
+šablonu, minuty, intenzitu, prodloužení jednotky a dopad na silový i
+lower-body objem. Session log pak zaznamená skutečný průběh. Kombinace
+těžkých nohou a intenzivního kola vyžaduje výslovné zdůvodnění; běžně se
+objem nohou sníží.
 
 ## Běžný postup
 
