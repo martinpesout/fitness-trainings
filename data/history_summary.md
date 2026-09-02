@@ -248,3 +248,20 @@ U dumbbell gorilla row byl rozsah 8–12 opakování určený pro každou ruku.
 Supinated rear-delt fly se prováděl s jednoručkami. Cyclist front squat a
 standing calf raise používaly olympijskou osu. Zpětné hodnocení, skutečné
 zátěže, RPE ani délky odpočinku nejsou k dispozici.
+
+## 2. 12. 2024 až 23. 1. 2025: dvě šablony A/B se silovými a kruhovými cviky
+
+Zdroj: `history/blocks/2024-12-02--2025-01-23.md`
+
+- A: paused air squat jump 3 × 8 s maximálním výskokem; front squat a
+  paused bench press ve třech sériích po 6, 8 a 10 opakováních; ring row
+  4 × 10 s 15sekundovou výdrží v horní pozici po posledním opakování.
+- B, první supersérie: pull-up a kombinovaný ring dip + leg raise
+  3 × maximum. Jedno opakování kombinovaného cviku tvořil dip a hned
+  poté zvednutí nohou.
+- B, druhá supersérie: back squat ve třech sériích po 6, 8 a 10
+  opakováních a landmine sit-up 3 × 10. Závěr tvořil ring support hold
+  3 × maximální výdrž.
+
+U obou supersérií byla pauza 2 minuty mezi koly. Zpětné hodnocení,
+skutečné zátěže, RPE ani celková délka tréninků nejsou k dispozici.
