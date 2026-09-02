@@ -280,3 +280,18 @@ Zdroj: `history/blocks/2024-10-25--2024-12-01.md`
 U obou supersérií byla pauza 1,5 minuty mezi koly. Zpětné hodnocení,
 ostatní skutečné zátěže, RPE ani celková délka tréninků nejsou k
 dispozici.
+
+## 13. 9. 2024 až 24. 10. 2024: dvě šablony A/B s nohama a kruhy
+
+Zdroj: `history/blocks/2024-09-13--2024-10-24.md`
+
+- A: back squat 4 × 10; Bulgarian split squat s olympijskou osou na
+  zádech 4 × 8–10 na každou nohu; Zercher hold 4 × 30 sekund s nejtěžší
+  použitelnou váhou; sissy squat bez zátěže 4 × 15.
+- B, první supersérie: ring pull-up a strict ring dips 5 × maximum.
+- B, druhá supersérie: Z-press 4 × 8; single-arm dumbbell row 4 × 10 na
+  každou ruku.
+
+U obou supersérií byla pauza 1,5 minuty mezi koly. Sissy squat se
+prováděl bez zátěže. Zpětné hodnocení, ostatní skutečné zátěže, RPE ani
+celková délka tréninků nejsou k dispozici.
