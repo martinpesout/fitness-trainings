@@ -265,3 +265,18 @@ Zdroj: `history/blocks/2024-12-02--2025-01-23.md`
 
 U obou supersérií byla pauza 2 minuty mezi koly. Zpětné hodnocení,
 skutečné zátěže, RPE ani celková délka tréninků nejsou k dispozici.
+
+## 25. 10. 2024 až 1. 12. 2024: dvě šablony A/B s výpady a kruhy
+
+Zdroj: `history/blocks/2024-10-25--2024-12-01.md`
+
+- A: front squat 4 × 5; Zercher walking lunge 4 × 8–10 na každou nohu;
+  Zercher hold 4 × maximální výdrž s co nejtěžší použitelnou váhou;
+  walking lunge bez zátěže 4 × 30 kroků celkem v každé sérii.
+- B, první supersérie: ring pull-up a ring push-up 5 × maximum.
+- B, druhá supersérie: floor press 4 × 10; Pendlay row ve čtyřech
+  sériích po 12, 10, 8 a 6 opakováních s postupným zvyšováním zátěže.
+
+U obou supersérií byla pauza 1,5 minuty mezi koly. Zpětné hodnocení,
+ostatní skutečné zátěže, RPE ani celková délka tréninků nejsou k
+dispozici.
