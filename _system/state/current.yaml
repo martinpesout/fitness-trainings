@@ -4,6 +4,6 @@ default_sequence:
   - A
   - B
   - C
-sequence_position: A
-next_session: B
+sequence_position: B
+next_session: C
 block_number: 1
